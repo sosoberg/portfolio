@@ -1,0 +1,99 @@
+body {
+    flex-direction: column;
+}
+
+header {
+    padding: 40px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+    justify-content: space-between;
+
+}
+header h1 {
+    font-size: 300%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+nav ul {
+    justify-content: space-between;
+    min-width: 400px;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 40px;
+    display: flex;
+}
+
+section {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 40px;
+    display: flex;
+}
+
+section h2 {
+    font-size: 250%;
+    font-weight: bolder;
+    justify-content: space-between;
+    padding-right: 20px;
+    text-align: center;
+}
+section p {
+    font-size: 125%;
+    padding-left: 20px;
+    border-left: 5px solid;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+aside {
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    border: 3px solid;
+}
+aside img {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+}
+
+.projects {
+    flex: 3;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+    section{
+        flex-wrap: wrap;
+    }
+    section p {
+        margin-bottom: 20px;
+    }
+    aside {
+        width: fit-content;
+        height: fit-content;
+
+    }
+    aside img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
