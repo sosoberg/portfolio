@@ -49,8 +49,9 @@ section h2 {
     background-color: black;
     color: white;
     border-color: lightblue;
-    top: 120px;
+    top: 80px;
     left: 5px;
+    min-width: 223px;
 }
 .bio {
     background-color: lightblue;
@@ -78,15 +79,26 @@ aside img {
 .media {
     position: relative;
     right: 250px;
-    top: -250px;
-    width: 800px;
+    top: -100px;
+    width: 10%;
     height: 25px;
     border: 4px solid;
     background-color: lightblue;
+    min-width: 100px;
+    height: 50px;
+    background-color: white;
+    padding: 5px;
 }
 
-.media p {
+.media img {
+    width: 45%;
+    align-items: center;
     text-align: center;
+}
+
+.media img:hover {
+    height: 100%;
+    width: 50%;
 }
 
 .projects {
