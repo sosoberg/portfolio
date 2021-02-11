@@ -1,5 +1,6 @@
 body {
     flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -109,7 +110,7 @@ aside img {
 }
 
 .projects h3 {
-    width: 75%;
+    width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -126,7 +127,7 @@ aside img {
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 400px;
+    flex: 1 1 400px;
     height: 400px;
     margin: 20px;
 }
@@ -142,7 +143,6 @@ aside img {
     aside {
         width: fit-content;
         height: fit-content;
-
     }
     aside img {
         display: block;
@@ -154,10 +154,39 @@ aside img {
         text-align: center;
         right: 0px;
     }
+    .media {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        border: none;
+        
+    }
 }
 
 @media only screen and (max-width: 770px) {
     main h2 {
         top: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header nav ul {
+        display: none;
+    }
+    header h1 {
+        text-align: center;
+        margin: 0px;
+    }
+    main h2 {
+        width: 90%;
+        top: 80px;
+        right: 5px;
+    }
+    main {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        margin: 0px;
     }
 }
