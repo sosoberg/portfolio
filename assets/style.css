@@ -124,6 +124,8 @@ aside img {
 }
 
 .card {
+    background-image: url(./images/project.jpeg);
+    background-size: cover;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -131,6 +133,27 @@ aside img {
     flex: 1 1 400px;
     height: 400px;
     margin: 20px;
+}
+
+.card h4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    width: 80%;
+    background-color: black;
+    padding: 20px;
+    border: 3px solid;
+    border-color: white;
+}
+
+@media only screen and (min-width: 2300px) {
+    .projects h3 {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -158,14 +181,12 @@ aside img {
         right: 0px;
     }
     .media {
-        position: relative;
-        right: 0px;
-        top: 0px;
-        border: none;
-        top: -100px;
+        display: none;
+    }
+    .projects {
+        margin-top: 40px;
     }
 }
-
 @media only screen and (max-width: 770px) {
     main h2 {
         top: 120px;
@@ -181,9 +202,10 @@ aside img {
         margin: 0px;
     }
     main h2 {
-        width: 90%;
+        width: 87%;
         top: 80px;
-        right: 5px;
+        left: 0px;
+        min-width: none;
     }
     main {
         display: block;
@@ -191,5 +213,11 @@ aside img {
         margin-left: auto;
         width: 100%;
         margin: 0px;
+        padding: 10px;
+    }
+    .bio {
+        padding: 70px 10px 20px 10px;
+        width: 80%;
+        margin-left: 15px;
     }
 }
