@@ -1,3 +1,4 @@
+/*eliminates any extra data outside of the default x-axis*/
 body {
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -14,6 +15,7 @@ header {
     justify-content: space-between;
     border-bottom: 4px solid;
 }
+
 header h1 {
     font-size: 300%;
     font-weight: bolder;
@@ -38,6 +40,7 @@ main {
     display: flex;
 }
 
+/*positioned to not change the layout of other divs around*/
 main h2 {
     font-size: 250%;
     font-weight: bolder;
@@ -55,6 +58,7 @@ main h2 {
     left: 5px;
     min-width: 223px;
 }
+
 .bio {
     background-color: lightblue;
     font-size: 125%;
@@ -62,12 +66,13 @@ main h2 {
     border: 5px solid;
     justify-content: space-between;
     padding: 40px;
-    
 }
+
 aside {
     width: 100%;
     justify-content: space-between;
 }
+/*positioned to move with paragraph div and change size with window*/
 aside img {
     position: relative;
     width: 250px;
@@ -77,7 +82,7 @@ aside img {
     border: 5px solid;
     right: 50px;
 }
-
+/*quick media box for my github and linkedin for quick access*/
 .media {
     position: relative;
     right: 250px;
@@ -91,18 +96,18 @@ aside img {
     background-color: white;
     padding: 5px;
 }
-
+/*github and linkedin images*/
 .media img {
     width: 45%;
     align-items: center;
     text-align: center;
 }
-
+/*image will grow when hovered*/
 .media img:hover {
     height: 100%;
     width: 50%;
 }
-
+/*flex wrap for all of the project sections so that they flow well with webpage size*/
 .projects {
     flex: 3;
     display: flex;
@@ -122,7 +127,7 @@ aside img {
     border-bottom: 5px solid;
     padding-bottom: 10px;
 }
-
+/*placeholder image for now, will add project images in the future*/
 .card {
     background-image: url(./images/project.jpeg);
     background-size: cover;
@@ -149,27 +154,30 @@ aside img {
     border: 3px solid;
     border-color: white;
 }
-
+/*ultra wide monitors will not have a weird flex-wrap effect*/
 @media only screen and (min-width: 2300px) {
     .projects h3 {
         width: 95%;
     }
 }
-
+/*media quiry to make everthing fall into a column style, previous formatting looked poor*/
 @media only screen and (max-width: 1000px) {
     main {
         flex-wrap: wrap;
     }
+
     .bio {
         margin-bottom: 20px;
         width: 80%;
     }
+
     aside {
         width: fit-content;
         height: fit-content;
         top: 0px;
         right: 0px;
     }
+
     aside img {
         display: block;
         margin-left: auto;
@@ -180,33 +188,39 @@ aside img {
         text-align: center;
         right: 0px;
     }
+    /*took away media class, did not fit well with new format*/
     .media {
         display: none;
     }
+
     .projects {
         margin-top: 40px;
     }
 }
+/*moved h2 so that it did not conflict with the format change of h1*/
 @media only screen and (max-width: 770px) {
     main h2 {
         top: 120px;
     }
 }
-
+/*this media quiry is for the mobile size*/
 @media only screen and (max-width: 400px) {
     header nav ul {
         display: none;
     }
+
     header h1 {
         text-align: center;
         margin: 0px;
     }
+
     main h2 {
         width: 87%;
         top: 80px;
         left: 0px;
         min-width: none;
     }
+
     main {
         display: block;
         margin-right: auto;
@@ -215,6 +229,7 @@ aside img {
         margin: 0px;
         padding: 10px;
     }
+
     .bio {
         padding: 70px 10px 20px 10px;
         width: 80%;
