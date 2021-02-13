@@ -1,6 +1,7 @@
 body {
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -33,7 +34,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 40px;
+    padding: 40px 40px 40px 10px;
     display: flex;
 }
 
@@ -136,13 +137,15 @@ aside img {
     main {
         flex-wrap: wrap;
     }
-    main p {
+    .bio {
         margin-bottom: 20px;
         width: 80%;
     }
     aside {
         width: fit-content;
         height: fit-content;
+        top: 0px;
+        right: 0px;
     }
     aside img {
         display: block;
@@ -159,7 +162,7 @@ aside img {
         right: 0px;
         top: 0px;
         border: none;
-        
+        top: -100px;
     }
 }
 
